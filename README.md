@@ -10,6 +10,11 @@ Expressは、node.jsで利用できるwebサーバ。
 * Expressサーバ内で表示する内容を、EJSを用いて動的に変化させる。
 
 ### Getting Started
-1. initialize 
-2. start express server
-3. access from browser
+0. (Optional) Start node docker image.  
+```docker run --entrypoint=/bin/bash -it --rm -v `pwd`:`pwd` -w `pwd` -p 3000:3000 node```
+1. Install required packages.  
+```npm install```
+3. start express server  
+```node . ```
+4. access from browser  
+```http://localhost:3000```
