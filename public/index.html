@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <p>publicフォルダの外にあるファイルは、参照できない。</p>
+        <p>Can't see the image file outside of public folder.</p>
+        <img src="data/flower-high.jpg">
+        <p>publicフォルダ内のファイルは、参照できる。</p>
+        <p>Can see the image inside of the public folder.</p>
+        <img src="Lenna.png">
+        <p>静的HTMLファイルではpublicフォルダ外のデータは参照できないが、テンプレートエンジンを用いれば、
+            サーバー（ローカルサーバの場合はローカルマシン）内のすべてのファイルを見ることができる。</p>
+        <p>Even though normal html can't see the file outside of the public folder,
+            We can se any file in the server (that is local machine if we are using local server)
+            by using fs.readFileSync and template engine.
+        </p>
+        <p> HTMLファイルがテンプレートでレンダリングされるので、別ページで表示する。</p>
+        <a href="/ejs">Temlate engine demo</a>
+    </body>
+</html>

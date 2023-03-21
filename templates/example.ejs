@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index page</title>
+  </head>
+  <body>
+    <p> ここで、EJSでbase64エンコードしたJpegデータを代入している。</p>
+    <img src="data:image/png;base64,<%= imagebase64data %>" alt="Red dot" />
+    <p> 別途読み込んだJSONファイルも当然表示することができる。</p>
+    <pre><%= jsondata %></pre>
+  </body>
+</html>
